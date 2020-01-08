@@ -7,27 +7,18 @@ a.write("Message you want to send")
 # For Receive Message
 x = a.read()
 print(x)
-
-################################################################################################
-
 # For RFID
 from RpiSerial import RpiSerial as r
 a = r.RFID(port = "Your Port Number",baudrate = Your Baudrate)
 # For Receive Message
 x = a.read()
 print(x)
-
-################################################################################################
-
 # For GPS
 from RpiSerial import RpiSerial as r
 a = r.GPS(port = "Your Port Number",baudrate = Your Baudrate)
 # For Receiving Message
 Latitude, Longitude, Time, Date = a.read() # Date and Time is in IST(Indian Standard Time) Format
 print(Latitude, Longitude, Time, Date)
-
-################################################################################################
-
 # For GSM
 from RpiSerial import RpiSerial as r
 a = r.GSM(port = "Your Port Number",baudrate = Your Baudrate)
